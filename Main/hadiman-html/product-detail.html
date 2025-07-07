@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadiman</title>
+    <link rel="shortcut icon" href="./assets/images/fav.ico">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/icomoon/style.css">
+    <link rel="stylesheet" href="./dist/output-tailwind.css">
+    <link rel="stylesheet" href="./dist/output-scss.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="header" class="header relative z-[2]">
+        <div class="top_nav h-11 bg-dark text-white">
+            <div class="container h-full">
+                <div class="top_nav_inner flex items-center justify-between h-full">
+                    <ul class="top_nav_info flex items-center gap-6">
+                        <li class="info_item inline-flex items-center gap-2 max-md:hidden">
+                            <span class="ph ph-map-pin"></span>
+                            <span class="caption1">268 St, East Chicago, IN 46312, US</span>
+                        </li>
+                        <li class="info_item inline-flex items-center gap-2 max-[400px]:hidden">
+                            <span class="ph ph-alarm"></span>
+                            <span class="caption1">8:00am : 10:00pm Mon-Sun</span>
+                        </li>
+                    </ul>
+                    <ul class="top_nav_social flex items-center">
+                        <li class="social_item">
+                            <a href="https://www.facebook.com/"
+                                class="social_link flex items-center justify-center w-9 h-9" target="_blank">
+                                <span class="ph ph-facebook-logo text-xl"></span>
+                                <span class="blind">link facebook</span>
+                            </a>
+                        </li>
+                        <li class="social_item">
+                            <a href="https://www.x.com/" class="social_link flex items-center justify-center w-9 h-9"
+                                target="_blank">
+                                <span class="ph ph-x-logo text-xl"></span>
+                                <span class="blind">link x</span>
+                            </a>
+                        </li>
+                        <li class="social_item">
+                            <a href="https://www.instagram.com/"
+                                class="social_link flex items-center justify-center w-9 h-9" target="_blank">
+                                <span class="ph ph-instagram-logo text-xl"></span>
+                                <span class="blind">link instagram</span>
+                            </a>
+                        </li>
+                        <li class="social_item">
+                            <a href="https://www.skype.com/"
+                                class="social_link flex items-center justify-center w-9 h-9" target="_blank">
+                                <span class="ph ph-skype-logo text-xl"></span>
+                                <span class="blind">link skype</span>
+                            </a>
+                        </li>
+                        <li class="social_item">
+                            <a href="https://www.telegram.com/"
+                                class="social_link flex items-center justify-center w-9 h-9" target="_blank">
+                                <span class="ph ph-telegram-logo text-xl"></span>
+                                <span class="blind">link telegram</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header_main sm:h-25 h-20 bg-white">
+            <div class="container flex items-center justify-between h-full">
+                <h1>
+                    <a href="index.html" class="logo flex items-center gap-3">
+                        <img src="./assets/images/logo_orange.png" class="flex-shrink-0 w-10" alt="logo">
+                        <strong class="heading4">Hadiman</strong>
+                    </a>
+                </h1>
+                <ul class="header_info flex items-center xl:gap-15 gap-5">
+                    <li>
+                        <a href="tel:+1555678888" class="flex items-center gap-3 group">
+                            <span
+                                class="flex items-center justify-center sm:w-14 w-12 sm:h-14 h-12 border-2 border-orange duration-400 group-hover:bg-orange group-hover:text-white">
+                                <span class="ph ph-phone-call sm:text-3xl text-2xl"></span>
+                            </span>
+                            <div class="max-lg:hidden">
+                                <span class="text-variant1">Call Us Now:</span>
+                                <strong class="heading6 block mt-0.5">1-555-678-888</strong>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <a href="mailto:hi.avitex@gmail.com" class="flex items-center gap-3 group">
+                            <span
+                                class="flex items-center justify-center sm:w-14 w-12 sm:h-14 h-12 border-2 border-orange duration-400 group-hover:bg-orange group-hover:text-white">
+                                <span class="ph ph-envelope sm:text-3xl text-2xl"></span>
+                            </span>
+                            <div class="max-lg:hidden">
+                                <span class="text-variant1">Email Address</span>
+                                <strong class="heading6 block mt-0.5">hi.avitex@gmail.com</strong>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="max-sm:hidden">
+                        <a href="book-appointment.html" class="btn">Request an estimate</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu_main h-15 border-t border-outline">
+            <div class="container flex items-center justify-between h-full bg-white">
+                <button class="menu_icons_btn js_btn_open_popup lg:hidden" data-popup="popup_menu_mobile">
+                    <span class="ph ph-list text-2xl"></span>
+                    <span class="blind">button menu mobile</span>
+                </button>
+                <ul class="menu flex items-center gap-10 h-full max-lg:hidden">
+                    <li class="menu_item h-full relative">
+                        <a href="#!" class="menu_link inline-flex items-center gap-1 h-full">
+                            <span class="has_line txt-button">Home</span>
+                            <span class="ph-bold ph-caret-down mt-0.5 text-xs"></span>
+                        </a>
+                        <ul
+                            class="menu_sub invisible absolute top-full -left-6 min-w-[13.75rem] p-3 border-t border-outline bg-white translate-y-5 opacity-0 pointer-events-none shadow duration-400">
+                            <li class="menu_sub_item">
+                                <a href="index.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300">Homepage
+                                    01</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="home2.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300">Homepage
+                                    02</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="home3.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300">Homepage
+                                    03</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="home4.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300">Homepage
+                                    04</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="rtl.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300">Homepage
+                                    RTL</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu_item h-full relative">
+                        <a href="#!" class="menu_link inline-flex items-center gap-1 h-full">
+                            <span class="has_line txt-button">Services</span>
+                            <span class="ph-bold ph-caret-down mt-0.5 text-xs"></span>
+                        </a>
+                        <div
+                            class="menu_sub menu_sub_mega invisible fixed top-[12.75rem] right-0 left-0 translate-y-5 opacity-0 pointer-events-none duration-400">
+                            <div class="container">
+                                <ul
+                                    class="services_list grid grid-cols-3 gap-4 w-full p-8 border-t border-outline bg-white">
+                                    <li class="services_item">
+                                        <a href="services-detail.html"
+                                            class="services_link flex gap-5 py-4 px-5 border border-outline hover:bg-orange hover:bg-opacity-10 hover:border-orange duration-300 group">
+                                            <span class="services_icon icon-wrench-house flex-shrink-0 text-5xl duration-300 group-hover:text-orange"></span>
+                                            <div class="services_info">
+                                                <strong
+                                                    class="services_tit heading6 group-hover:text-orange duration-300">Renovation
+                                                    Services</strong>
+                                                <p
+                                                    class="services_desc mt-1 caption1 text-variant1 text-ellipsis line-clamp-2">
+                                                    Transform your home with our professional renovation services. Whether
+                                                    it’s a kitchen remodel, a bathroom upgrade, or a complete home makeover,
+                                                    our team brings your vision to life with precision and care.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="services_item">
+                                        <a href="services-detail.html"
+                                            class="services_link flex gap-5 py-4 px-5 border border-outline hover:bg-orange hover:bg-opacity-10 hover:border-orange duration-300 group">
+                                            <span class="services_icon icon-electrical flex-shrink-0 text-5xl duration-300 group-hover:text-orange"></span>
+                                            <div class="services_info">
+                                                <strong
+                                                    class="services_tit heading6 group-hover:text-orange duration-300">Electrical
+                                                    Services</strong>
+                                                <p
+                                                    class="services_desc mt-1 caption1 text-variant1 text-ellipsis line-clamp-2">
+                                                    Our licensed electricians provide safe, reliable electrical services,
+                                                    including installations, repairs, upgrades, and inspections to ensure
+                                                    your home’s electrical systems are efficient and up-to-code.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="services_item">
+                                        <a href="services-detail.html"
+                                            class="services_link flex gap-5 py-4 px-5 border border-outline hover:bg-orange hover:bg-opacity-10 hover:border-orange duration-300 group">
+                                            <span class="services_icon icon-pipe flex-shrink-0 text-5xl duration-300 group-hover:text-orange"></span>
+                                            <div class="services_info">
+                                                <strong
+                                                    class="services_tit heading6 group-hover:text-orange duration-300">Plumbing
+                                                    Services</strong>
+                                                <p
+                                                    class="services_desc mt-1 caption1 text-variant1 text-ellipsis line-clamp-2">
+                                                    From fixing leaks to installing new fixtures, our experienced plumbers
+                                                    handle all types of plumbing projects, ensuring dependable solutions for
+                                                    both minor repairs and major installations.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="services_item">
+                                        <a href="services-detail.html"
+                                            class="services_link flex gap-5 py-4 px-5 border border-outline hover:bg-orange hover:bg-opacity-10 hover:border-orange duration-300 group">
+                                            <span class="services_icon icon-air flex-shrink-0 text-5xl duration-300 group-hover:text-orange"></span>
+                                            <div class="services_info">
+                                                <strong
+                                                    class="services_tit heading6 group-hover:text-orange duration-300">HVAC
+                                                    Services</strong>
+                                                <p
+                                                    class="services_desc mt-1 caption1 text-variant1 text-ellipsis line-clamp-2">
+                                                    Stay comfortable year-round with our HVAC installation, repair, and
+                                                    maintenance. We provide energy-efficient solutions tailored to your
+                                                    home’s needs, keeping your family comfortable in every season.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="services_item">
+                                        <a href="services-detail.html"
+                                            class="services_link flex gap-5 py-4 px-5 border border-outline hover:bg-orange hover:bg-opacity-10 hover:border-orange duration-300 group">
+                                            <span class="services_icon icon-paint flex-shrink-0 text-5xl duration-300 group-hover:text-orange"></span>
+                                            <div class="services_info">
+                                                <strong
+                                                    class="services_tit heading6 group-hover:text-orange duration-300">Painting
+                                                    and Drywall</strong>
+                                                <p
+                                                    class="services_desc mt-1 caption1 text-variant1 text-ellipsis line-clamp-2">
+                                                    Refresh your home with our professional painting and drywall services,
+                                                    delivering high-quality finishes that enhance your space’s aesthetic
+                                                    appeal and durability.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="services_item">
+                                        <a href="services-detail.html"
+                                            class="services_link flex gap-5 py-4 px-5 border border-outline hover:bg-orange hover:bg-opacity-10 hover:border-orange duration-300 group">
+                                            <span class="services_icon icon-roof flex-shrink-0 text-5xl duration-300 group-hover:text-orange"></span>
+                                            <div class="services_info">
+                                                <strong
+                                                    class="services_tit heading6 group-hover:text-orange duration-300">Roofing
+                                                    Services</strong>
+                                                <p
+                                                    class="services_desc mt-1 caption1 text-variant1 text-ellipsis line-clamp-2">
+                                                    Enhance your home’s protection and curb appeal with our expert roofing
+                                                    services, including new installations, repairs, and inspections to
+                                                    ensure long-lasting protection and beauty for your property.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu_item h-full relative">
+                        <a href="#!" class="menu_link inline-flex items-center gap-1 h-full">
+                            <span class="has_line txt-button">Blog</span>
+                            <span class="ph-bold ph-caret-down mt-0.5 text-xs"></span>
+                        </a>
+                        <ul
+                            class="menu_sub invisible absolute top-full -left-6 min-w-[13.75rem] p-3 border-t border-outline bg-white translate-y-5 opacity-0 pointer-events-none shadow duration-400">
+                            <li class="menu_sub_item">
+                                <a href="blog-default.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300">Blog
+                                    Default</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="blog-list.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300">Blog
+                                    List</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="blog-grid.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300">Blog
+                                    Grid</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="blog-detail1.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300">Blog
+                                    Details 1</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="blog-detail2.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300">Blog
+                                    Details 2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu_item h-full relative">
+                        <a href="#!" class="menu_link inline-flex items-center gap-1 h-full active">
+                            <span class="has_line txt-button">Shop</span>
+                            <span class="ph-bold ph-caret-down mt-0.5 text-xs"></span>
+                        </a>
+                        <ul
+                            class="menu_sub invisible absolute top-full -left-6 min-w-[13.75rem] p-3 border-t border-outline bg-white translate-y-5 opacity-0 pointer-events-none shadow duration-400">
+                            <li class="menu_sub_item">
+                                <a href="our-products.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300">Our
+                                    Products</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="product-detail.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300 active">Product
+                                    Details</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="cart.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300">Shopping
+                                    Cart</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="checkout.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300">Check
+                                    Out</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu_item h-full relative">
+                        <a href="#!" class="menu_link inline-flex items-center gap-1 h-full">
+                            <span class="has_line txt-button">Pages</span>
+                            <span class="ph-bold ph-caret-down mt-0.5 text-xs"></span>
+                        </a>
+                        <ul
+                            class="menu_sub invisible absolute top-full -left-6 min-w-[13.75rem] p-3 border-t border-outline bg-white translate-y-5 opacity-0 pointer-events-none shadow duration-400">
+                            <li class="menu_sub_item">
+                                <a href="about-us.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300">About
+                                    Us</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="our-services.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300">Our Services</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="our-projects1.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300">Our
+                                    Projects 1</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="our-projects2.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300">Our
+                                    Projects 2</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="projects-detail.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300">Projects
+                                    Detail</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="our-pricing.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300">Our
+                                    Pricing</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="our-testimonials.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300">Our
+                                    Testimonials</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="book-appointment.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300">Book
+                                    Appointment</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="404.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300">404
+                                    Page</a>
+                            </li>
+                            <li class="menu_sub_item">
+                                <a href="faqs.html"
+                                    class="menu_sub_link block px-3 py-[0.875rem] txt-button hover:bg-orange hover:bg-opacity-10 hover:text-orange duration-300">Faqs</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu_item h-full relative">
+                        <a href="contact.html" class="menu_link inline-flex items-center gap-1 h-full">
+                            <span class="has_line txt-button">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="menu_icons">
+                    <li class="menu_icons_item inline-block align-middle max-lg:hidden">
+                        <button class="menu_icons_btn js_btn_open_popup" data-popup="popup_search">
+                            <span class="ph ph-magnifying-glass text-2xl"></span>
+                            <span class="blind">button search</span>
+                        </button>
+                    </li>
+                    <li class="menu_icons_item inline-block align-middle relative ml-5">
+                        <button class="menu_icons_btn js_btn_open_popup" data-popup="popup_wishlist">
+                            <span class="ph ph-heart text-2xl"></span>
+                            <span class="blind">button wishlist</span>
+                        </button>
+                        <span class="wishlist_quantity flex items-center justify-center absolute -top-1.5 -right-1.5 w-4 h-4 rounded-full bg-black text-[10px] text-white pointer-events-none">2</span>
+                    </li>
+                    <li class="menu_icons_item inline-block align-middle relative ml-5">
+                        <button class="menu_icons_btn js_btn_open_popup" data-popup="popup_cart">
+                            <span class="ph ph-shopping-bag-open text-2xl"></span>
+                            <span class="blind">button cart</span>
+                        </button>
+                        <span
+                            class="cart_quantity flex items-center justify-center absolute -top-2 -right-2 w-4 h-4 rounded-full bg-black text-[10px] text-white pointer-events-none">2</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- BREADCRUMB -->
+    <section class="section breadcrumb pt-5 border-t border-outline">
+        <h3 class="blind">Product Detail</h3>
+        <div class="container">
+            <ul class="breadcrumb_nav flex items-center gap-1 animate">
+                <li class="flex items-center">
+                    <a href="index.html" class="breadcrumb_link caption1 duration-300 hover:underline">Home</a>
+                </li>
+                <li class="flex items-center">
+                    <span class="ph ph-caret-right text-xs"></span>
+                    <a href="our-products.html" class="breadcrumb_link pl-1 caption1 duration-300 hover:underline">Shop</a>
+                </li>
+                <li class="flex items-center">
+                    <span class="ph ph-caret-right text-xs opacity-50"></span>
+                    <a href="#!" class="breadcrumb_link pl-1 caption1 opacity-50 line-clamp-1 max-w-60">Dewalt 20V MAX XR Impact Driver, Brushless, 1/4", 3-Speed, Bare Tool Only </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- SHOP -->
+    <section class="section product sm:mt-15 mt-7">
+        <div class="container flex flex-col items-center">
+            <div class="flex max-lg:flex-col gap-y-12 w-full">
+                <div class="product_images flex-shrink-0 lg:w-1/2 w-full lg:pr-4 h-fit">
+                    <div class="swiper product_swiper_thumb">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./assets/images/products/detail/1.jpg" class="h-full object-cover" alt="img products detail 1" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/products/detail/2.jpg" class="h-full object-cover" alt="img products detail 2" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/products/detail/3.jpg" class="h-full object-cover" alt="img products detail 3" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/products/detail/4.jpg" class="h-full object-cover" alt="img products detail 4" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper product_swiper_list mt-5">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./assets/images/products/detail/1.jpg" class="h-full object-cover" alt="img products detail 1" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/products/detail/2.jpg" class="h-full object-cover" alt="img products detail 2" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/products/detail/3.jpg" class="h-full object-cover" alt="img products detail 3" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/images/products/detail/4.jpg" class="h-full object-cover" alt="img products detail 4" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product_detail w-full xl:pl-16 lg:pl-8">
+                    <div class="flex flex-wrap items-center gap-4">
+                        <span class="product_badge py-0.5 px-1.5 bg-red txt-button text-white">Best Seller</span>
+                        <ul class="flex gap-px">
+                            <li class="ph-fill ph-star text-yellow"></li>
+                            <li class="ph-fill ph-star text-yellow"></li>
+                            <li class="ph-fill ph-star text-yellow"></li>
+                            <li class="ph-fill ph-star text-yellow"></li>
+                            <li class="ph-fill ph-star-half text-yellow"></li>
+                        </ul>
+                        <span class="caption1 text-variant1">(1.234)</span>
+                        <span class="flex items-center gap-1">
+                            <span class="ph-fill ph-lightning text-red text-xl"></span>
+                            <span class="caption1">18 sold in last 32 hours</span>
+                        </span>
+                    </div>
+                    <h4 class="product_name mt-4 heading4">Dewalt 20V MAX XR Impact Driver, Brushless, 1/4", 3-Speed, Bare Tool Only </h4>
+                    <div class="flex flex-wrap items-center mt-5">
+                        <h5 class="product_price heading5">$79.99</h5>
+                        <del class="product_origin_price ml-2 body2 text-variant2">$98.99</del>
+                        <span class="product_discount ml-4 py-0.5 px-1.5 bg-red txt-button text-white">-25%</span>
+                    </div>
+                    <p class="product_desc mt-5 text-variant1">Swiffer duster starter kit includes one handle and three unscented disposable dusters, when you run out of Swiffer 360-degree Dusters, save your handle and buy refills. Clever all-around design features 50% more fibers.</p>
+                    <div class="product_type_area mt-6 pt-6 border-t border-outline">
+                        <div class="flex flex-wrap items-center gap-2">
+                            <span>Type:</span>
+                            <span class="product_type">20V MAX XR Impact Driver Bare Tool</span>
+                        </div>
+                        <ul class="product_type_list filter_type category_list flex flex-wrap gap-3 mt-3" role="tablist">
+                            <li class="product_type_item" role="presentation">
+                                <button class="product_type_btn tab_btn btn btn_outline active" role="tab" aria-selected="true">20V MAX XR</button>
+                            </li>
+                            <li class="product_type_item" role="presentation">
+                                <button class="product_type_btn tab_btn btn btn_outline" role="tab" aria-selected="false">24V MAX XR</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="quantity_area mt-6">
+                        <span>Quantity:</span>
+                        <div class="quantity_form flex items-center gap-13 w-fit mt-3 p-3 border border-outline">
+                            <button class="btn_decrease_quantity">
+                                <span class="ph ph-minus text-xl"></span>
+                                <span class="blind">button decrease quantity</span>
+                            </button>
+                            <span class="quantity -mt-0.5 text-xl font-bold">1</span>
+                            <button class="btn_increase_quantity">
+                                <span class="ph ph-plus text-xl"></span>
+                                <span class="blind">button increase quantity</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-2.5 mt-6">
+                        <button class="btn_cart js_btn_open_popup btn flex items-center justify-center w-full h-12 bg-black" data-popup="popup_cart">
+                            <span>Add to cart - </span>
+                            <span class="product_price">$79.99</span>
+                        </button>
+                        <button class="btn_compare btn_toggle flex flex-shrink-0 items-center justify-center w-12 h-12 border border-outline duration-300 hover:border-outline hover:bg-black hover:text-white">
+                            <span class="ph ph-git-diff text-2xl"></span>
+                            <span class="ph ph-check-circle text-2xl text-[#71f84f] hidden"></span>
+                            <span class="blind">button compare</span>
+                        </button>
+                        <button class="btn_wishlist btn_toggle js_btn_open_popup flex flex-shrink-0 items-center justify-center w-12 h-12 border border-outline duration-300 hover:border-outline hover:bg-black hover:text-white" data-popup="popup_wishlist">
+                            <span class="ph ph-heart text-2xl"></span>
+                            <span class="ph-fill ph-heart text-2xl text-red hidden"></span>
+                            <span class="blind">button wishlist</span>
+                        </button>
+                    </div>
+                    <a href="checkout.html" class="btn flex items-center justify-center w-full h-12 mt-4">Buy it now</a>
+                    <div class="mt-6">
+                        <p class="caption1">Pickup available at Shop location. Usually ready in 24 hours</p>
+                        <a href="https://maps.app.goo.gl/Z8zKdiKbpcEdV6MV8" class="flex items-center gap-1 mt-3" target="_blank">
+                            <span class='ph ph-map-pin text-xl'></span>
+                            <span class="caption1 underline duration-300 hover:text-orange">View Store Information</span>
+                        </a>
+                        <div class="flex items-center gap-1 mt-3">
+                            <span class='ph ph-timer text-xl'></span>
+                            <p>
+                                <span class="caption1 text-variant1">Estimated Delivery:</span>
+                                <span class="caption1 text-variant1"><span class="text-black">12-26 days</span> (International), <span class="text-black">3-6 days</span> (United States)</span>
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-1 mt-3">
+                            <span class='ph ph-arrow-clockwise text-xl'></span>
+                            <span class="caption1 text-variant1">Return within <span class="text-black">45 days</span> of purchase. Duties & taxes are non-refundable.</span>
+                        </div>
+                        <div class="flex flex-wrap items-center gap-4 mt-3">
+                            <div class="flex items-center gap-1 pr-4 border-r border-outline">
+                                <i class='ph ph-truck text-xl'></i>
+                                <div class="caption1">Delivery & Return</div>
+                            </div>
+                            <div class="flex items-center gap-1 pr-4 border-r border-outline">
+                                <i class='ph ph-question text-xl'></i>
+                                <div class="caption1">Ask A Question</div>
+                            </div>
+                            <div class="flex items-center gap-1">
+                                <i class='ph ph-share-network text-xl'></i>
+                                <div class="caption1">Share</div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="flex flex-col gap-2 mt-6 pt-6 border-t border-outline">
+                        <li class="flex items-center gap-1 caption1">
+                            <span class="txt-button">SKU:</span>
+                            <span class="text-variant1">53453412</span>
+                        </li>
+                        <li class="flex items-center gap-1 caption1">
+                            <span class="txt-button">Vendor:</span>
+                            <span class="text-variant1">dewalt</span>
+                        </li>
+                        <li class="flex items-center gap-1 caption1">
+                            <span class="txt-button">Available:</span>
+                            <span class="text-variant1">Instock</span>
+                        </li>
+                        <li class="flex items-center gap-1 caption1">
+                            <span class="txt-button">Categories:</span>
+                            <span class="text-variant1">tools, electric</span>
+                        </li>
+                    </ul>
+                    <div class="flex flex-wrap gap-4 mt-6 pt-6 border-t border-outline">
+                        <span>Guranteed safe checkout:</span>
+                        <ul class="payment_list flex flex-wrap gap-3">
+                            <li class="payment_item">
+                                <img src="./assets/images/other/payment1.png" class="h-[32px]" alt="visa">
+                            </li>
+                            <li class="payment_item">
+                                <img src="./assets/images/other/payment2.png" class="h-[32px]" alt="mastercard">
+                            </li>
+                            <li class="payment_item">
+                                <img src="./assets/images/other/payment3.png" class="h-[32px]" alt="amex">
+                            </li>
+                            <li class="payment_item">
+                                <img src="./assets/images/other/payment4.png" class="h-[32px]" alt="paypal">
+                            </li>
+                            <li class="payment_item">
+                                <img src="./assets/images/other/payment5.png" class="h-[32px]" alt="diners club">
+                            </li>
+                            <li class="payment_item">
+                                <img src="./assets/images/other/payment6.png" class="h-[32px]" alt="discover">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="xl:w-5/6 w-full sm:mt-15 mt-10">
+                <div class="heading flex justify-center">
+                    <ul class="menu_tab flex items-center gap-10" role="tablist">
+                        <li role="presentation">
+                            <button class="tab_btn tab_btn_txt_black has_line line_black py-1 heading5 uppercase text-variant2 hover:text-black" id="description" role="tab" aria-controls="tab_description" aria-selected="false">description</button>
+                        </li>
+                        <li role="presentation">
+                            <button class="tab_btn tab_btn_txt_black has_line line_black py-1 heading5 uppercase text-variant2 hover:text-black active" id="review" role="tab" aria-controls="tab_review" aria-selected="true">review</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content -mt-px sm:p-10 p-7 border border-outline">
+                    <div id="tab_description" class="tab_panel description" role="tabpanel" aria-labelledby="description" aria-hidden="true">
+                        <h6 class="heading6">About This Products</h6>
+                        <ul class="list-feature">
+                            <li class="item flex gap-1 text-secondary mt-1">
+                                <span class="ph ph-dot text-2xl mt-px"></span>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </li>
+                            <li class="item flex gap-1 text-secondary mt-1">
+                                <span class="ph ph-dot text-2xl mt-px"></span>
+                                <p>Nulla luctus libero quis mauris vestibulum dapibus.</p>
+                            </li>
+                            <li class="item flex gap-1 text-secondary mt-1">
+                                <span class="ph ph-dot text-2xl mt-px"></span>
+                                <p>Maecenas ullamcorper erat mi, vel consequat enim suscipit at.</p>
+                            </li>
+                            <li class="item flex gap-1 text-secondary mt-1">
+                                <span class="ph ph-dot text-2xl mt-px"></span>
+                                <p>Quisque consectetur nibh ac urna molestie scelerisque.</p>
+                            </li>
+                            <li class="item flex gap-1 text-secondary mt-1">
+                                <span class="ph ph-dot text-2xl mt-px"></span>
+                                <p>Mauris in nisl scelerisque massa consectetur pretium sed et mauris.</p>
+                            </li>
+                        </ul>
+                        <ul class="lg:w-2/3 sm:w-3/4 w-full mt-6">
+                            <li class="item flex items-center gap-8 py-3 px-10">
+                                <strong class="txt-button sm:w-1/4 w-1/3">Weight</strong>
+                                <p>10kg</p>
+                            </li>
+                            <li class="item bg-surface flex items-center gap-8 py-3 px-10">
+                                <strong class="txt-button sm:w-1/4 w-1/3">Engine</strong>
+                                <p>Brushless</p>
+                            </li>
+                            <li class="item flex items-center gap-8 py-3 px-10">
+                                <strong class="txt-button sm:w-1/4 w-1/3">No-load speed</strong>
+                                <p>3600 rpm</p>
+                            </li>
+                            <li class="item bg-surface flex items-center gap-8 py-3 px-10">
+                                <strong class="txt-button sm:w-1/4 w-1/3">Maximum torque</strong>
+                                <p>380 N.m</p>
+                            </li>
+                            <li class="item flex items-center gap-8 py-3 px-10">
+                                <strong class="txt-button sm:w-1/4 w-1/3">2 in 1 head</strong>
+                                <p>Head 1/2</p>
+                            </li>
+                            <li class="item bg-surface flex items-center gap-8 py-3 px-10">
+                                <strong class="txt-button sm:w-1/4 w-1/3">Battery capacity</strong>
+                                <p>5Ah - 5,000 mAh</p>
+                            </li>
+                            <li class="item flex items-center gap-8 py-3 px-10">
+                                <strong class="txt-button sm:w-1/4 w-1/3">Charging voltage</strong>
+                                <p>220V-240V~50/60Hz</p>
+                            </li>
+                            <li class="item bg-surface flex items-center gap-8 py-3 px-10">
+                                <strong class="txt-button sm:w-1/4 w-1/3">Lamp</strong>
+                                <p>3 LED lights</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="tab_review" class="tab_panel review active" role="tabpanel" aria-labelledby="review" aria-hidden="false">
+                        <div class="rating_area flex items-center max-md:flex-col justify-between gap-y-3">
+                            <div class="flex flex-col items-center justify-center gap-1">
+                                <h2 class="heading1 avg_rating">4.8</h2>
+                                <div class="flex flex-col items-center gap-1">
+                                    <ul class="rate flex">
+                                        <li class="ph-fill ph-star text-2xl text-yellow"></li>
+                                        <li class="ph-fill ph-star text-2xl text-yellow"></li>
+                                        <li class="ph-fill ph-star text-2xl text-yellow"></li>
+                                        <li class="ph-fill ph-star text-2xl text-yellow"></li>
+                                        <li class="ph-fill ph-star-half text-2xl text-yellow"></li>
+                                    </ul>
+                                    <span class="total_rating">(1,968 Ratings)</span>
+                                </div>
+                            </div>
+                            <div class="list_rating flex-shrink-0 2xl:w-[520px] sm:w-[50%] w-full">
+                                <div class="item flex items-center justify-between gap-3">
+                                    <div class="flex flex-shrink-0 items-center gap-1 min-w-7">
+                                        <strong class="text-button-sm">5</strong>
+                                        <span class="ph-fill ph-star text-sm text-yellow"></span>
+                                    </div>
+                                    <div class="progress bg-outline relative w-full h-3">
+                                        <div class="progress-percent absolute bg-black w-[70%] h-full left-0 top-0"></div>
+                                    </div>
+                                    <strong class="percent flex-shrink-0 min-w-8 text-right text-button-sm">70%</strong>
+                                </div>
+                                <div class="item flex items-center justify-between gap-3 mt-1">
+                                    <div class="flex flex-shrink-0 items-center gap-1 min-w-7">
+                                        <strong class="text-button-sm">4</strong>
+                                        <span class="ph-fill ph-star text-sm text-yellow"></span>
+                                    </div>
+                                    <div class="progress bg-outline relative w-full h-3">
+                                        <div class="progress-percent absolute bg-black w-[20%] h-full left-0 top-0"></div>
+                                    </div>
+                                    <strong class="percent flex-shrink-0 min-w-8 text-right text-button-sm">20%</strong>
+                                </div>
+                                <div class="item flex items-center justify-between gap-3 mt-1">
+                                    <div class="flex flex-shrink-0 items-center gap-1 min-w-7">
+                                        <strong class="text-button-sm">3</strong>
+                                        <span class="ph-fill ph-star text-sm text-yellow"></span>
+                                    </div>
+                                    <div class="progress bg-outline relative w-full h-3">
+                                        <div class="progress-percent absolute bg-black w-[10%] h-full left-0 top-0"></div>
+                                    </div>
+                                    <strong class="percent flex-shrink-0 min-w-8 text-right text-button-sm">10%</strong>
+                                </div>
+                                <div class="item flex items-center justify-between gap-3 mt-1">
+                                    <div class="flex flex-shrink-0 items-center gap-1 min-w-7">
+                                        <strong class="text-button-sm">2</strong>
+                                        <span class="ph-fill ph-star text-sm text-yellow"></span>
+                                    </div>
+                                    <div class="progress bg-outline relative w-full h-3">
+                                        <div class="progress-percent absolute bg-black w-0 h-full left-0 top-0"></div>
+                                    </div>
+                                    <strong class="percent flex-shrink-0 min-w-8 text-right text-button-sm">0%</strong>
+                                </div>
+                                <div class="item flex items-center justify-between gap-3 mt-1">
+                                    <div class="flex flex-shrink-0 items-center gap-2 min-w-7">
+                                        <strong class="text-button-sm">1</strong>
+                                        <span class="ph-fill ph-star text-sm text-yellow"></span>
+                                    </div>
+                                    <div class="progress bg-outline relative w-full h-3">
+                                        <div class="progress-percent absolute bg-black w-0 h-full left-0 top-0"></div>
+                                    </div>
+                                    <strong class="percent flex-shrink-0 min-w-8 text-right text-button-sm">0%</strong>
+                                </div>
+                            </div>
+                            <a href="#form-review" class="btn flex-shrink-0 h-fit">Write a review</a>
+                        </div>
+                        <div class="flex flex-wrap items-center justify-between gap-3 mt-10">
+                            <h5 class="heading5">04 Comments</h5>
+                            <div class="sorting flex items-center gap-3">
+                                <span class="caption1 text-variant1">Sort by:</span>
+                                <div class="form_select">
+                                    <select name="sorting" class="w-full py-2.5 pl-3 pr-18 border border-outline rounded caption1" required>
+                                        <option selected disabled value>Sorting</option>
+                                        <option value="Most Recent">Most Recent</option>
+                                        <option value="Newest">Newest</option>
+                                    </select>
+                                    <span class="ph ph-caret-down arrow_down text-xl text-variant1"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="review_list flex flex-col gap-6 mt-5">
+                            <li class="review_item">
+                                <div class="review_user flex items-center gap-4">
+                                    <div class="review_user_avatar flex-shrink-0 w-15 h-15 rounded-full overflow-hidden">
+                                        <img src="./assets/images/team/team1.jpg" alt="Jeremy L." class="user_avatar w-full h-full object-cover" />
+                                    </div>
+                                    <div class="review_user_info">
+                                        <span class="review_user_name txt-button">Jeremy L.</span>
+                                        <span class="review_user_date block caption1 text-variant1">August 22, 2024</span>
+                                    </div>
+                                </div>
+                                <p class="review_desc mt-3">Amazing quality! The product arrived quickly, and I was impressed with how durable it feels. Definitely worth the price, and I’ll be purchasing again soon.</p>
+                                <ul class="review_reply flex flex-col gap-6 mt-6 sm:ml-15 ml-8 pl-5 border-l-4 border-outline">
+                                    <li class="review_reply_item">
+                                        <div class="review_user flex items-center gap-4">
+                                            <div class="review_user_avatar flex-shrink-0 w-15 h-15 rounded-full overflow-hidden">
+                                                <img src="./assets/images/team/team2.jpg" alt="Anotonio R." class="user_avatar w-full h-full object-cover" />
+                                            </div>
+                                            <div class="review_user_info">
+                                                <span class="review_user_name txt-button">Anotonio R.</span>
+                                                <span class="review_user_date block caption1 text-variant1">August 23, 2024</span>
+                                            </div>
+                                        </div>
+                                        <p class="review_desc mt-3">Exceeded my expectations! I bought this as a gift, and the recipient was thrilled. The craftsmanship is top-notch, and customer service was super helpful with my inquiries.</p>
+                                    </li>
+                                    <li class="review_reply_item">
+                                        <div class="review_user flex items-center gap-4">
+                                            <div class="review_user_avatar flex-shrink-0 w-15 h-15 rounded-full overflow-hidden">
+                                                <img src="./assets/images/team/team4.jpg" alt="Alexander P." class="user_avatar w-full h-full object-cover" />
+                                            </div>
+                                            <div class="review_user_info">
+                                                <span class="review_user_name txt-button">Alexander P.</span>
+                                                <span class="review_user_date block caption1 text-variant1">August 23, 2024</span>
+                                            </div>
+                                        </div>
+                                        <p class="review_desc mt-3">I really like the logo that Gihan created, and he was very responsive and great to work with. I would recommend him to anyone looking for a logo or graphic design!</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="review_item">
+                                <div class="review_user flex items-center gap-4">
+                                    <div class="review_user_avatar flex-shrink-0 w-15 h-15 rounded-full overflow-hidden">
+                                        <img src="./assets/images/team/team3.jpg" alt="Christina H." class="user_avatar w-full h-full object-cover" />
+                                    </div>
+                                    <div class="review_user_info">
+                                        <span class="review_user_name txt-button">Christina H.</span>
+                                        <span class="review_user_date block caption1 text-variant1">August 21, 2024</span>
+                                    </div>
+                                </div>
+                                <p class="review_desc mt-3">Great experience overall! Easy checkout process, fast shipping, and the product was just as described. Highly recommend this shop for reliable purchases!</p>
+                            </li>
+                        </ul>
+                        <div id="form-review" class="form-review mt-10">
+                            <h5 class="heading5">Leave A comment</h5>
+                            <form class="form grid sm:grid-cols-2 gap-5 mt-6">
+                                <div class="name">
+                                    <label for="username">Name</label>
+                                    <input class="form_input w-full mt-2 px-4 py-3 border border-outline" id="username" type="text" placeholder="Your Name" required />
+                                </div>
+                                <div class="mail">
+                                    <label for="email">Email</label>
+                                    <input class="form_input w-full mt-2 px-4 py-3 border border-outline" id="email" type="email" placeholder="Your Email" required />
+                                </div>
+                                <div class="title col-span-full">
+                                    <label for="title">Review Title</label>
+                                    <input class="form_input w-full mt-2 px-4 py-3 border border-outline" id="title" type="text" placeholder="Give your review a title" required />
+                                </div>
+                                <div class="col-span-full message">
+                                    <label for="message">Review</label>
+                                    <textarea class="form_input w-full mt-2 px-4 py-3 border border-outline" id="message" name="message" rows="3" placeholder="Write your comment" required></textarea>
+                                </div>
+                                <div class="user_rating flex items-end gap-2 col-span-full">
+                                    <strong>Your Rating:</strong>
+                                    <ul class="list_rate flex gap-1">
+                                        <li class="ph-fill ph-star star text-3xl text-outline cursor-pointer" data-value="1"></li>
+                                        <li class="ph-fill ph-star star text-3xl text-outline cursor-pointer" data-value="2"></li>
+                                        <li class="ph-fill ph-star star text-3xl text-outline cursor-pointer" data-value="3"></li>
+                                        <li class="ph-fill ph-star star text-3xl text-outline cursor-pointer" data-value="4"></li>
+                                        <li class="ph-fill ph-star star text-3xl text-outline cursor-pointer" data-value="5"></li>
+                                    </ul>
+                                </div>
+                                <div class="form_checkbox flex col-span-full">
+                                    <input type="checkbox" class="checkbox" id="saveAccount" />
+                                    <span class="ph-fill ph-check-square text-[22px] checkbox_icon"></span>
+                                    <label class="label pl-7" for="saveAccount">Save my name, email, and website in this browser for the next time I comment.</label>
+                                </div>
+                                <div class="col-span-full">
+                                    <button type="submit" class="btn">Submit Review</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- RELATED PRODUCT -->
+    <section class="product_related sm:py-25 py-15">
+        <div class="container">
+            <h3 class="heading3 text-center">Related Products</h3>
+            <ul class="product_list grid xl:grid-cols-4 grid-cols-2 sm:gap-7.5 gap-5 gap-y-10 sm:mt-10 mt-7">
+                <li class="product_item group">
+                    <div class="product_thumb overflow-hidden relative">
+                        <a href="product-detail.html" class="product_img block">
+                            <img src="./assets/images/products/2.jpg" class="h-full object-cover duration-700 group-hover:scale-105" alt="VACO Impact Driver">
+                        </a>
+                        <span class="product_discount absolute top-4 left-4 z-[1] py-0.5 px-1.5 bg-red txt-button text-white">-32%</span>
+                        <ul class="product_action flex flex-col gap-2 absolute top-4 right-4 z-[1] max-lg:hidden">
+                            <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
+                                <button class="product_action_btn btn_wishlist btn_toggle js_btn_open_popup flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white" data-popup="popup_wishlist">
+                                    <span class="ph ph-heart text-xl"></span>
+                                    <span class="ph-fill ph-heart text-2xl text-red hidden"></span>
+                                    <span class="blind">button wishlist</span>
+                                </button>
+                            </li>
+                            <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
+                                <button class="product_action_btn btn_compare btn_toggle flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                    <span class="ph ph-git-diff text-xl"></span>
+                                    <span class="ph ph-check-circle text-2xl text-[#71f84f] hidden"></span>
+                                    <span class="blind">button compare</span>
+                                </button>
+                            </li>
+                            <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
+                                <button class="product_action_btn btn_view flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                    <span class="ph ph-eye text-xl"></span>
+                                </button>
+                            </li>
+                        </ul>
+                        <button class="btn_cart js_btn_open_popup btn absolute right-5 bottom-5 left-5 text-center translate-y-20 duration-400 group-hover:translate-y-0 max-lg:hidden" data-popup="popup_cart">Add To cart</button>
+                    </div>
+                    <a href="product-detail.html" class="product_info block pt-5">
+                        <div class="flex items-center gap-2">
+                            <ul class="flex gap-px">
+                                <li class="ph-fill ph-star text-yellow"></li>
+                                <li class="ph-fill ph-star text-yellow"></li>
+                                <li class="ph-fill ph-star text-yellow"></li>
+                                <li class="ph-fill ph-star text-yellow"></li>
+                                <li class="ph-fill ph-star text-yellow"></li>
+                            </ul>
+                            <span class="caption1 text-variant1">(1.234)</span>
+                        </div>
+                        <strong class="product_name my-2 txt-button line-clamp-2 duration-300 group-hover:text-orange">VACO Impact Driver</strong>
+                        <strong class="heading6">$68.00</strong>
+                    </a>
+                </li>
+                <li class="product_item group">
+                    <div class="product_thumb overflow-hidden relative">
+                        <a href="product-detail.html" class="product_img block">
+                            <img src="./assets/images/products/3.jpg" class="h-full object-cover duration-700 group-hover:scale-105" alt="Custom Leathercraft Bucket">
+                        </a>
+                        <span class="product_discount absolute top-4 left-4 z-[1] py-0.5 px-1.5 bg-red txt-button text-white">-32%</span>
+                        <ul class="product_action flex flex-col gap-2 absolute top-4 right-4 z-[1] max-lg:hidden">
+                            <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
+                                <button class="product_action_btn btn_wishlist btn_toggle js_btn_open_popup flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white" data-popup="popup_wishlist">
+                                    <span class="ph ph-heart text-xl"></span>
+                                    <span class="ph-fill ph-heart text-2xl text-red hidden"></span>
+                                    <span class="blind">button wishlist</span>
+                                </button>
+                            </li>
+                            <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
+                                <button class="product_action_btn btn_compare btn_toggle flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                    <span class="ph ph-git-diff text-xl"></span>
+                                    <span class="ph ph-check-circle text-2xl text-[#71f84f] hidden"></span>
+                                    <span class="blind">button compare</span>
+                                </button>
+                            </li>
+                            <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
+                                <button class="product_action_btn btn_view flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                    <span class="ph ph-eye text-xl"></span>
+                                </button>
+                            </li>
+                        </ul>
+                        <button class="btn_cart js_btn_open_popup btn absolute right-5 bottom-5 left-5 text-center translate-y-20 duration-400 group-hover:translate-y-0 max-lg:hidden" data-popup="popup_cart">Add To cart</button>
+                    </div>
+                    <a href="product-detail.html" class="product_info block pt-5">
+                        <div class="flex items-center gap-2">
+                            <ul class="flex gap-px">
+                                <li class="ph-fill ph-star text-yellow"></li>
+                                <li class="ph-fill ph-star text-yellow"></li>
+                                <li class="ph-fill ph-star text-yellow"></li>
+                                <li class="ph-fill ph-star text-yellow"></li>
+                                <li class="ph-fill ph-star text-outline"></li>
+                            </ul>
+                            <span class="caption1 text-variant1">(1.234)</span>
+                        </div>
+                        <strong class="product_name my-2 txt-button line-clamp-2 duration-300 group-hover:text-orange">Custom Leathercraft Bucket</strong>
+                        <strong class="heading6">$68.00</strong>
+                    </a>
+                </li>
+                <li class="product_item group">
+                    <div class="product_thumb overflow-hidden relative">
+                        <a href="product-detail.html" class="product_img block">
+                            <img src="./assets/images/products/4.jpg" class="h-full object-cover duration-700 group-hover:scale-105" alt="Klein Tools 60491 Hinged">
+                        </a>
+                        <span class="product_discount absolute top-4 left-4 z-[1] py-0.5 px-1.5 bg-red txt-button text-white">-32%</span>
+                        <ul class="product_action flex flex-col gap-2 absolute top-4 right-4 z-[1] max-lg:hidden">
+                            <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
+                                <button class="product_action_btn btn_wishlist btn_toggle js_btn_open_popup flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white" data-popup="popup_wishlist">
+                                    <span class="ph ph-heart text-xl"></span>
+                                    <span class="ph-fill ph-heart text-2xl text-red hidden"></span>
+                                    <span class="blind">button wishlist</span>
+                                </button>
+                            </li>
+                            <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
+                                <button class="product_action_btn btn_compare btn_toggle flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                    <span class="ph ph-git-diff text-xl"></span>
+                                    <span class="ph ph-check-circle text-2xl text-[#71f84f] hidden"></span>
+                                    <span class="blind">button compare</span>
+                                </button>
+                            </li>
+                            <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
+                                <button class="product_action_btn btn_view flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                    <span class="ph ph-eye text-xl"></span>
+                                </button>
+                            </li>
+                        </ul>
+                        <button class="btn_cart js_btn_open_popup btn absolute right-5 bottom-5 left-5 text-center translate-y-20 duration-400 group-hover:translate-y-0 max-lg:hidden" data-popup="popup_cart">Add To cart</button>
+                    </div>
+                    <a href="product-detail.html" class="product_info block pt-5">
+                        <div class="flex items-center gap-2">
+                            <ul class="flex gap-px">
+                                <li class="ph-fill ph-star text-yellow"></li>
+                                <li class="ph-fill ph-star text-yellow"></li>
+                                <li class="ph-fill ph-star text-yellow"></li>
+                                <li class="ph-fill ph-star text-yellow"></li>
+                                <li class="ph-fill ph-star text-outline"></li>
+                            </ul>
+                            <span class="caption1 text-variant1">(1.234)</span>
+                        </div>
+                        <strong class="product_name my-2 txt-button line-clamp-2 duration-300 group-hover:text-orange">Klein Tools 60491 Hinged</strong>
+                        <strong class="heading6">$68.00</strong>
+                    </a>
+                </li>
+                <li class="product_item group">
+                    <div class="product_thumb overflow-hidden relative">
+                        <a href="product-detail.html" class="product_img block">
+                            <img src="./assets/images/products/5.jpg" class="h-full object-cover duration-700 group-hover:scale-105" alt="Real Steel Sledge Hammer">
+                        </a>
+                        <span class="product_discount absolute top-4 left-4 z-[1] py-0.5 px-1.5 bg-red txt-button text-white">-32%</span>
+                        <ul class="product_action flex flex-col gap-2 absolute top-4 right-4 z-[1] max-lg:hidden">
+                            <li class="translate-x-20 duration-400 delay-0 group-hover:translate-x-0">
+                                <button class="product_action_btn btn_wishlist btn_toggle js_btn_open_popup flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white" data-popup="popup_wishlist">
+                                    <span class="ph ph-heart text-xl"></span>
+                                    <span class="ph-fill ph-heart text-2xl text-red hidden"></span>
+                                    <span class="blind">button wishlist</span>
+                                </button>
+                            </li>
+                            <li class="translate-x-20 duration-400 delay-100 group-hover:translate-x-0">
+                                <button class="product_action_btn btn_compare btn_toggle flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                    <span class="ph ph-git-diff text-xl"></span>
+                                    <span class="ph ph-check-circle text-2xl text-[#71f84f] hidden"></span>
+                                    <span class="blind">button compare</span>
+                                </button>
+                            </li>
+                            <li class="translate-x-20 duration-400 delay-200 group-hover:translate-x-0">
+                                <button class="product_action_btn btn_view flex items-center justify-center w-10 h-10 border border-outline bg-white duration-300 hover:bg-black hover:text-white">
+                                    <span class="ph ph-eye text-xl"></span>
+                                </button>
+                            </li>
+                        </ul>
+                        <button class="btn_cart js_btn_open_popup btn absolute right-5 bottom-5 left-5 text-center translate-y-20 duration-400 group-hover:translate-y-0 max-lg:hidden" data-popup="popup_cart">Add To cart</button>
+                    </div>
+                    <a href="product-detail.html" class="product_info block pt-5">
+                        <div class="flex items-center gap-2">
+                            <ul class="flex gap-px">
+                                <li class="ph-fill ph-star text-yellow"></li>
+                                <li class="ph-fill ph-star text-yellow"></li>
+                                <li class="ph-fill ph-star text-yellow"></li>
+                                <li class="ph-fill ph-star text-yellow"></li>
+                                <li class="ph-fill ph-star text-outline"></li>
+                            </ul>
+                            <span class="caption1 text-variant1">(1.234)</span>
+                        </div>
+                        <strong class="product_name my-2 txt-button line-clamp-2 duration-300 group-hover:text-orange">Real Steel Sledge Hammer</strong>
+                        <strong class="heading6">$68.00</strong>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer sm:pt-20 pt-12 bg-dark text-white">
+        <div class="container flex flex-wrap justify-between gap-10">
+            <div class="footer_info md:w-1/4 w-full">
+                <h1>
+                    <a href="index.html" class="footer_logo flex items-center gap-3">
+                        <img src="./assets/images/logo_orange.png" class="flex-shrink-0 w-10" alt="logo">
+                        <strong class="heading4">Hadiman</strong>
+                    </a>
+                </h1>
+                <div class="footer_map mt-7">
+                    <div class="flex items-center gap-2 pb-2">
+                        <span class="ph ph-map-pin text-2xl"></span>
+                        <span>268 St, East Chicago, IN 46312, US</span>
+                    </div>
+                    <a href="https://maps.app.goo.gl/Y6gQTTNuxhrqbrcX8" class="text-sm font-bold underline duration-300 hover:text-orange" target="_blank">Google map</a>
+                </div>
+                <div class="footer_mail flex flex-wrap items-center gap-2 mt-4">
+                    <span class="ph ph-envelope text-2xl"></span>
+                    <span>hi.avitex@gmail.com</span>
+                </div>
+                <div class="footer_time mt-4">
+                    <span class="block pb-1 text-variant2">Opening Times:</span>
+                    <span>Mon - Fri: 9am - 5pm</span>
+                    <span>Weekend: 10am - 4pm</span>
+                </div>
+                <ul class="footer_social flex flex-wrap items-center gap-3 mt-7">
+                    <li class="social_item">
+                        <a href="https://www.messenger.com/"
+                            class="social_link flex items-center justify-center w-10 h-10 border border-white border-opacity-10 rounded-full text-white duration-400 hover:bg-white hover:text-orange"
+                            target="_blank">
+                            <span class="ph ph-messenger-logo text-xl"></span>
+                            <span class="blind">link messenger</span>
+                        </a>
+                    </li>
+                    <li class="social_item">
+                        <a href="https://www.x.com/"
+                            class="social_link flex items-center justify-center w-10 h-10 border border-white border-opacity-10 rounded-full text-white duration-400 hover:bg-white hover:text-orange"
+                            target="_blank">
+                            <span class="ph ph-x-logo text-xl"></span>
+                            <span class="blind">link x</span>
+                        </a>
+                    </li>
+                    <li class="social_item">
+                        <a href="https://www.instagram.com/"
+                            class="social_link flex items-center justify-center w-10 h-10 border border-white border-opacity-10 rounded-full text-white duration-400 hover:bg-white hover:text-orange"
+                            target="_blank">
+                            <span class="ph ph-instagram-logo text-xl"></span>
+                            <span class="blind">link instagram</span>
+                        </a>
+                    </li>
+                    <li class="social_item">
+                        <a href="https://www.skype.com/"
+                            class="social_link flex items-center justify-center w-10 h-10 border border-white border-opacity-10 rounded-full text-white duration-400 hover:bg-white hover:text-orange"
+                            target="_blank">
+                            <span class="ph ph-skype-logo text-xl"></span>
+                            <span class="blind">link skype</span>
+                        </a>
+                    </li>
+                    <li class="social_item">
+                        <a href="https://www.telegram.com/"
+                            class="social_link flex items-center justify-center w-10 h-10 border border-white border-opacity-10 rounded-full text-white duration-400 hover:bg-white hover:text-orange"
+                            target="_blank">
+                            <span class="ph ph-telegram-logo text-xl"></span>
+                            <span class="blind">link telegram</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_content md:w-2/3 w-full">
+                <div class="footer_newsletter flex max-lg:flex-col gap-15 gap-y-6 pb-10 border-b border-white border-opacity-10">
+                    <h4 class="heading4">Subscribe <br class="max-lg:hidden">Newsletter</h4>
+                    <div class="w-full">
+                        <form class='flex w-full'>
+                            <input type="email" placeholder='Enter your e-mail'
+                                class='caption1 w-full h-14 px-6 border border-white border-opacity-10 duration-300 focus:border-white'
+                                required />
+                            <button type="submit" class='btn flex-shrink-0 h-fit hover:bg-white'>Subscribe</button>
+                        </form>
+                        <p class="mt-4 text-variant2">Sign up to get the latest news and events—we promise no spam.</p>
+                    </div>
+                </div>
+                <div class="footer_nav flex max-xl:flex-wrap justify-between gap-10 gap-y-6 mt-10">
+                    <div class="footer_nav_area max-sm:w-full">
+                        <strong class="footer_nav_heading txt-label max-sm:hidden">About</strong>
+                        <button type="button" class="footer_nav_btn btn_toggle flex items-center justify-between relative w-full py-2 border-b border-variant1 text-lg font-bold uppercase sm:hidden">
+                            <span>About</span>
+                            <span class="ph ph-plus"></span>
+                            <span class="ph ph-minus absolute top-1/2 right-0 -translate-y-1/2"></span>
+                        </button>
+                        <ul class="footer_nav_list flex flex-col gap-2 mt-3">
+                            <li>
+                                <a href="about-us.html" class="footer_nav_link has_line line_white capitalize text-variant2 hover:text-white duration-300">About Us</a>
+                            </li>
+                            <li>
+                                <a href="our-services.html" class="footer_nav_link has_line line_white capitalize text-variant2 hover:text-white duration-300">Services</a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="footer_nav_link has_line line_white capitalize text-variant2 hover:text-white duration-300">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="footer_nav_link has_line line_white capitalize text-variant2 hover:text-white duration-300">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_nav_area max-sm:w-full">
+                        <strong class="footer_nav_heading txt-label max-sm:hidden">Categories</strong>
+                        <button type="button" class="footer_nav_btn btn_toggle flex items-center justify-between relative w-full py-2 border-b border-variant1 text-lg font-bold uppercase sm:hidden">
+                            <span>Categories</span>
+                            <span class="ph ph-plus"></span>
+                            <span class="ph ph-minus absolute top-1/2 right-0 -translate-y-1/2"></span>
+                        </button>
+                        <ul class="footer_nav_list flex flex-col gap-2 mt-3">
+                            <li>
+                                <a href="services-detail.html" class="footer_nav_link has_line line_white capitalize text-variant2 hover:text-white duration-300">Renovation Services</a>
+                            </li>
+                            <li>
+                                <a href="services-detail.html" class="footer_nav_link has_line line_white capitalize text-variant2 hover:text-white duration-300">Electrical Services</a>
+                            </li>
+                            <li>
+                                <a href="services-detail.html" class="footer_nav_link has_line line_white capitalize text-variant2 hover:text-white duration-300">Plumbing Services</a>
+                            </li>
+                            <li>
+                                <a href="services-detail.html" class="footer_nav_link has_line line_white capitalize text-variant2 hover:text-white duration-300">HVAC Services</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_nav_area max-sm:w-full">
+                        <strong class="footer_nav_heading txt-label max-sm:hidden">Quick Links</strong>
+                        <button type="button" class="footer_nav_btn btn_toggle flex items-center justify-between relative w-full py-2 border-b border-variant1 text-lg font-bold uppercase sm:hidden">
+                            <span>Quick Links</span>
+                            <span class="ph ph-plus"></span>
+                            <span class="ph ph-minus absolute top-1/2 right-0 -translate-y-1/2"></span>
+                        </button>
+                        <ul class="footer_nav_list flex flex-col gap-2 mt-3">
+                            <li>
+                                <a href="our-services.html" class="footer_nav_link has_line line_white capitalize text-variant2 hover:text-white duration-300">Our Services</a>
+                            </li>
+                            <li>
+                                <a href="our-pricing.html" class="footer_nav_link has_line line_white capitalize text-variant2 hover:text-white duration-300">Pricing Plans</a>
+                            </li>
+                            <li>
+                                <a href="our-products.html" class="footer_nav_link has_line line_white capitalize text-variant2 hover:text-white duration-300">Shop</a>
+                            </li>
+                            <li>
+                                <a href="contact.html" class="footer_nav_link has_line line_white capitalize text-variant2 hover:text-white duration-300">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_nav_area max-md:w-full">
+                        <strong class="footer_nav_heading txt-label">Get a Free Estimate Today!</strong>
+                        <p class="footer_nav_desc mt-3 text-variant2">Call us for a cost estimate over the phone</p>
+                        <h5 class="footer_nav_contact heading5 mt-4">1-555-678-8888</h5>
+                        <a href="book-appointment.html" class="btn mt-4">Request an estimate</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_bottom flex items-center justify-between max-sm:flex-col gap-2 w-full mt-5 py-4 border-t border-white border-opacity-10">
+                <p class="copyright text-variant2 text-center">Copyright © 2024 Hadiman By <a href="" class="text-white hover:underline" target="_blank">Avitex</a>. <br class="xs:hidden">All rights reserved</p>
+                <div class="footer_bottom_link flex items-center gap-2.5">
+                    <a class="text-variant2 hover:underline hover:text-white" href="#!">Terms Of Services</a>
+                    <span class="text-white opacity-10">|</span>
+                    <a class="text-variant2 hover:underline hover:text-white" href="#!">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Scroll to top -->
+    <a class="scroll_to_top_btn" href="#header"><span class="ph-bold ph-caret-up"></span></a>
+    
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <!-- Menu mobile -->
+        <div id="popup_menu_mobile" class="popup_item popup_menu_mobile absolute top-0 left-0 w-full h-full bg-white -translate-x-full duration-500">
+            <div class="menu menu_mobile_inner p-6 overflow-x-hidden max-h-full">
+                <div class="heading flex justify-between">
+                    <a href="index.html" class="logo flex items-center gap-3">
+                        <img src="./assets/images/logo_orange.png" class="flex-shrink-0 w-12" alt="logo">
+                        <strong class="heading3">Hadiman</strong>
+                    </a>
+                    <button class="btn_close_popup js_btn_close_popup flex items-center justify-center w-7 h-7 rounded-full bg-black text-white">
+                        <span class="ph ph-x text-lg"></span>
+                        <span class="blind">button close popup</span>
+                    </button>
+                </div>
+                <form class="form_search overflow-hidden relative w-full h-13 mt-8">
+                    <input class="form_input py-3 pl-4 pr-16 w-full h-full border border-transparent bg-surface" type="text" placeholder="Search..." required />
+                    <button class="flex items-center justify-end absolute top-0 right-4 w-8 h-full aspect-square">
+                        <span class="ph ph-magnifying-glass text-2xl"></span>
+                    </button>
+                </form>
+                <ul class="menu_mobile_nav flex flex-col gap-3 mt-6">
+                    <li>
+                        <a href="#!" class="menu_link btn_toggle flex items-center justify-between w-full py-3 border-b border-outline">
+                            <strong class="heading6">Home</strong>
+                            <span class="ph ph-caret-down text-xl"></span>
+                        </a>
+                        <ul class="menu_sub_nav px-4 pt-2">
+                            <li>
+                                <a href="index.html" class="menu_sub_link py-2 txt-button">Homepage 01</a>
+                            </li>
+                            <li>
+                                <a href="home2.html" class="menu_sub_link py-2 txt-button">Homepage 02</a>
+                            </li>
+                            <li>
+                                <a href="home3.html" class="menu_sub_link py-2 txt-button">Homepage 03</a>
+                            </li>
+                            <li>
+                                <a href="home4.html" class="menu_sub_link py-2 txt-button">Homepage 04</a>
+                            </li>
+                            <li>
+                                <a href="rtl.html" class="menu_sub_link py-2 txt-button">Homepage RTL</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#!" class="menu_link btn_toggle flex items-center justify-between w-full py-3 border-b border-outline">
+                            <strong class="heading6">Services</strong>
+                            <span class="ph ph-caret-down text-xl"></span>
+                        </a>
+                        <ul class="menu_sub_nav px-4 pt-2">
+                            <li>
+                                <a href="services-detail.html" class="menu_sub_link py-2 txt-button">Renovation Services</a>
+                            </li>
+                            <li>
+                                <a href="services-detail.html" class="menu_sub_link py-2 txt-button">Electrical Services</a>
+                            </li>
+                            <li>
+                                <a href="services-detail.html" class="menu_sub_link py-2 txt-button">Plumbing Services</a>
+                            </li>
+                            <li>
+                                <a href="services-detail.html" class="menu_sub_link py-2 txt-button">HVAC Services</a>
+                            </li>
+                            <li>
+                                <a href="services-detail.html" class="menu_sub_link py-2 txt-button">Painting and Drywall</a>
+                            </li>
+                            <li>
+                                <a href="services-detail.html" class="menu_sub_link py-2 txt-button">Roofing Services</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#!" class="menu_link btn_toggle flex items-center justify-between w-full py-3 border-b border-outline">
+                            <strong class="heading6">Blog</strong>
+                            <span class="ph ph-caret-down text-xl"></span>
+                        </a>
+                        <ul class="menu_sub_nav px-4 pt-2">
+                            <li>
+                                <a href="blog-default.html" class="menu_sub_link py-2 txt-button">Blog Default</a>
+                            </li>
+                            <li>
+                                <a href="blog-list.html" class="menu_sub_link py-2 txt-button">Blog List</a>
+                            </li>
+                            <li>
+                                <a href="blog-grid.html" class="menu_sub_link py-2 txt-button">Blog Grid</a>
+                            </li>
+                            <li>
+                                <a href="blog-detail1.html" class="menu_sub_link py-2 txt-button">Blog Detail 1</a>
+                            </li>
+                            <li>
+                                <a href="blog-detail2.html" class="menu_sub_link py-2 txt-button">Blog Detail 2</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#!" class="menu_link btn_toggle flex items-center justify-between w-full py-3 border-b border-outline">
+                            <strong class="heading6">Shop</strong>
+                            <span class="ph ph-caret-down text-xl"></span>
+                        </a>
+                        <ul class="menu_sub_nav px-4 pt-2">
+                            <li>
+                                <a href="our-products.html" class="menu_sub_link py-2 txt-button">Our Products</a>
+                            </li>
+                            <li>
+                                <a href="product-detail.html" class="menu_sub_link py-2 txt-button active">Product Details</a>
+                            </li>
+                            <li>
+                                <a href="cart.html" class="menu_sub_link py-2 txt-button">Shopping Cart</a>
+                            </li>
+                            <li>
+                                <a href="checkout.html" class="menu_sub_link py-2 txt-button">Check Out</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#!" class="menu_link btn_toggle flex items-center justify-between w-full py-3 border-b border-outline">
+                            <strong class="heading6">Pages</strong>
+                            <span class="ph ph-caret-down text-xl"></span>
+                        </a>
+                        <ul class="menu_sub_nav px-4 pt-2">
+                            <li>
+                                <a href="about-us.html" class="menu_sub_link py-2 txt-button">About Us</a>
+                            </li>
+                            <li>
+                                <a href="our-services.html" class="menu_sub_link py-2 txt-button">Our Services</a>
+                            </li>
+                            <li>
+                                <a href="our-projects1.html" class="menu_sub_link py-2 txt-button">Our Projects 1</a>
+                            </li>
+                            <li>
+                                <a href="our-projects2.html" class="menu_sub_link py-2 txt-button">Our Projects 2</a>
+                            </li>
+                            <li>
+                                <a href="projects-detail.html" class="menu_sub_link py-2 txt-button">Projects Details</a>
+                            </li>
+                            <li>
+                                <a href="our-pricing.html" class="menu_sub_link py-2 txt-button">Our Pricings</a>
+                            </li>
+                            <li>
+                                <a href="our-testimonials.html" class="menu_sub_link py-2 txt-button">Our Testimonials</a>
+                            </li>
+                            <li>
+                                <a href="book-appointment.html" class="menu_sub_link py-2 txt-button">Book Appointment</a>
+                            </li>
+                            <li>
+                                <a href="404.html" class="menu_sub_link py-2 txt-button">404 Page</a>
+                            </li>
+                            <li>
+                                <a href="faqs.html" class="menu_sub_link py-2 txt-button">Faqs</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="btn_toggle flex items-center justify-between w-full py-3 border-b border-outline">
+                            <strong class="heading6">Contact</strong>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Popup Search -->
+        <div id="popup_search" class='popup_item popup_search absolute top-0 left-0 w-full h-full bg-black bg-opacity-90 duration-500 hidden'>
+            <button class="btn_close_popup js_btn_close_popup absolute top-16 left-[87vw]">
+                <span class="ph ph-x text-white text-5xl"></span>
+                <span class="blind">button close popup</span>
+            </button>
+            <form class="form_search overflow-hidden absolute top-1/2 left-1/2 w-[80vw] -translate-x-1/2 -translate-y-1/2">
+                <input class="form_input py-5 lg:pr-28 pr-18 w-full h-full border-b-2 border-variant1 lg:text-6xl text-4xl text-white" type="text" placeholder="Search..." required />
+                <button class="flex items-center justify-end absolute top-0 right-0 lg:w-20 w-14 h-full aspect-square text-white">
+                    <span class="ph ph-magnifying-glass lg:text-6xl text-4xl"></span>
+                </button>
+            </form>
+        </div>
+
+        <!-- Popup Wishlist -->
+        <div id="popup_wishlist" class='popup_item popup_wishlist absolute top-0 right-0 sm:w-[500px] w-[80vw] h-full bg-white translate-x-full duration-500'>
+            <div class='popup_wishlist_inner flex flex-col h-full p-6'>
+                <div class="heading flex flex-shrink-0 items-center justify-between w-full pb-5">
+                    <h5 class="heading5">Wishlist</h5>
+                    <button class="btn_close_popup js_btn_close_popup flex items-center justify-center w-7 h-7 rounded-full bg-black text-white">
+                        <span class="ph ph-x text-lg"></span>
+                        <span class="blind">button close popup</span>
+                    </button>
+                </div>
+                <ul class="wishlist_list overflow-x-hidden w-full h-full max-h-max">
+                    <li class="product_item flex items-center justify-between mt-5 pb-5 border-b border-outline w-full">
+                        <a href="product-detail.html" class="flex items-center gap-4">
+                            <div class="bg-img flex-shrink-0 overflow-hidden md:w-[100px] w-20 aspect-square">
+                                <img src="./assets/images/products/1.jpg" alt="Real Steel Sledge Hammer" class='w-full h-full object-cover' />
+                            </div>
+                            <div class="pr-4">
+                                <span class="product_name txt-button line-clamp-2 mb-1">Real Steel Sledge Hammer</span>
+                                <span class="product_price txt-button">$<span>50</span>.00</span>
+                            </div>
+                        </a>
+                        <button class='btn_remove_product rounded-full bg-transparent text-xl max-md:text-base text-red duration-300 hover:bg-red hover:text-white'>
+                            <span class="ph ph-x-circle text-xl"></span>
+                            <span class="blind">button remove product</span>
+                        </button>
+                    </li>
+                    <li class="product_item flex items-center justify-between mt-5 pb-5 border-b border-outline w-full">
+                        <a href="product-detail.html" class="flex items-center gap-4">
+                            <div class="bg-img flex-shrink-0 overflow-hidden md:w-[100px] w-20 aspect-square">
+                                <img src="./assets/images/products/2.jpg" alt="Dewalt Flooring Knee Pads" class='w-full h-full object-cover' />
+                            </div>
+                            <div class="pr-4">
+                                <span class="product_name txt-button line-clamp-2 mb-1">Dewalt Flooring Knee Pads</span>
+                                <span class="product_price txt-button">$<span>40</span>.00</span>
+                            </div>
+                        </a>
+                        <button class='btn_remove_product rounded-full bg-transparent text-xl max-md:text-base text-red duration-300 hover:bg-red hover:text-white'>
+                            <span class="ph ph-x-circle text-xl"></span>
+                            <span class="blind">button remove product</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Popup Cart -->
+        <div id="popup_cart" class='popup_item popup_cart absolute top-0 right-0 sm:w-[500px] w-[80vw] h-full bg-white translate-x-full duration-500'>
+            <div class='popup_cart_inner flex flex-col h-full p-6'>
+                <div class="heading flex flex-shrink-0 items-center justify-between w-full pb-5">
+                    <h5 class="heading5">Cart</h5>
+                    <button class="btn_close_popup js_btn_close_popup flex items-center justify-center w-7 h-7 rounded-full bg-black text-white">
+                        <span class="ph ph-x text-lg"></span>
+                        <span class="blind">button close popup</span>
+                    </button>
+                </div>
+                <ul class="cart_list overflow-x-hidden w-full h-full max-h-max">
+                    <li class="product_item flex items-center justify-between mt-5 pb-5 border-b border-outline w-full">
+                        <div class="flex gap-4">
+                            <a href="product-detail.html" class="bg-img flex-shrink-0 overflow-hidden md:w-[100px] md:h-[100px] w-24 h-24">
+                                <img src="./assets/images/products/1.jpg" alt="Real Steel Sledge Hammer" class='w-full h-full object-cover' />
+                            </a>
+                            <div class="w-full">
+                                <a href="product-detail.html" class="block pr-4">
+                                    <span class="product_name txt-button line-clamp-2 mb-1">Real Steel Sledge Hammer</span>
+                                    <span class="product_price txt-button">$<span>50</span>.00</span>
+                                </a>
+                                <div class="quantity_form flex items-center gap-5 w-fit mt-4 p-2 border border-outline">
+                                    <button class="btn_decrease_quantity" disabled>
+                                        <span class="ph ph-minus text-xl"></span>
+                                        <span class="blind">button decrease quantity</span>
+                                    </button>
+                                    <span class="quantity -mt-0.5 sm:text-xl text-lg font-bold">1</span>
+                                    <button class="btn_increase_quantity">
+                                        <span class="ph ph-plus text-xl"></span>
+                                        <span class="blind">button increase quantity</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class='btn_remove_product rounded-full bg-transparent text-xl max-md:text-base text-red duration-300 hover:bg-red hover:text-white'>
+                            <span class="ph ph-x-circle text-xl"></span>
+                            <span class="blind">button remove product</span>
+                        </button>
+                    </li>
+                    <li class="product_item flex items-center justify-between mt-5 pb-5 border-b border-outline w-full">
+                        <div class="flex gap-4">
+                            <a href="product-detail.html" class="bg-img flex-shrink-0 overflow-hidden md:w-[100px] md:h-[100px] w-24 h-24">
+                                <img src="./assets/images/products/2.jpg" alt="Dewalt Flooring Knee Pads" class='w-full h-full object-cover' />
+                            </a>
+                            <div class="w-full">
+                                <a href="product-detail.html" class="block pr-4">
+                                    <span class="product_name txt-button line-clamp-2 mb-1">Dewalt Flooring Knee Pads</span>
+                                    <span class="product_price txt-button">$<span>40</span>.00</span>
+                                </a>
+                                <div class="quantity_form flex items-center gap-5 w-fit mt-4 p-2 border border-outline">
+                                    <button class="btn_decrease_quantity" disabled>
+                                        <span class="ph ph-minus text-xl"></span>
+                                        <span class="blind">button decrease quantity</span>
+                                    </button>
+                                    <span class="quantity -mt-0.5 sm:text-xl text-lg font-bold">1</span>
+                                    <button class="btn_increase_quantity">
+                                        <span class="ph ph-plus text-xl"></span>
+                                        <span class="blind">button increase quantity</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class='btn_remove_product rounded-full bg-transparent text-xl max-md:text-base text-red duration-300 hover:bg-red hover:text-white'>
+                            <span class="ph ph-x-circle text-xl"></span>
+                            <span class="blind">button remove product</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/phosphor-icons.js"></script>
+    <script src="./assets/js/scrollSmooth.min.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
